@@ -1,4 +1,4 @@
-**Midterm Report**
+***Midterm Report***
 
 **Introduction/Background**: A quick introduction of your topic and mostly literature review of what has been done in this area. You can briefly explain your dataset and its features here too.
 
