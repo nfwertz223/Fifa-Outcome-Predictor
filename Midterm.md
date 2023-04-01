@@ -55,39 +55,9 @@ F1-score: 0.31893260139375185
 ```
 
 
-All our current metrics are below par. Our accuracy is below 50% which means that less than half the predictions we’re making are currently correct. Most importantly, our $F_1$ score is currently 0.3189. An acceptable 
+All our current metrics are below par. Our accuracy is below 50% which means that less than half the predictions we’re making are currently correct. Most importantly, our $F_1$ score is currently 0.3189. An acceptable $F_1$ score would at least have to be above 0.60, which means that our model is currently not performing well. The $F_1$ score that we have currently makes sense when looking at our low recall and precision. Precision is a fraction of the relevant instances among the retrieved instances. Recall is the fraction of the relevant instances that were retrieved. The F-score is a measure of the respective test’s accuracy and is calculated from a test’s precision and recall. The $F_1$ score which we are using, also called the balanced F-score, is the harmonic mean of the precision and recall. Since the harmonic mean of two numbers, $x_1$ and $x_2$ is defined as: $\dfrac{2}{\dfrac{1}{x_1} + \dfrac{1}{x_2}}$, the harmonic mean of recall and precision is: $\dfrac{2}{\dfrac{1}{recall} + \dfrac{1}{precision}}$
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- score would at least have to be above 0.60, which means that our model is currently not performing well. The 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- score that we have currently makes sense when looking at our low recall and precision. Precision is a fraction of the relevant instances among the retrieved instances. Recall is the fraction of the relevant instances that were retrieved. The F-score is a measure of the respective test’s accuracy and is calculated from a test’s precision and recall. The 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-score which we are using, also called the balanced F-score, is the harmonic mean of the precision and recall. Since the harmonic mean of two numbers, 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- is defined 
-
-as:                 , so the harmonic mean of recall and precision is:
-
-Since the precision and recall are from 0 to 1, the 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- score must also be from 0 to 1. An 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- score of 1.0 represents perfect precision and recall and a score of 0 means either precision or recall is 0.
-
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+Since the precision and recall are from 0 to 1, the $F_1$ score must also be from 0 to 1. An $F_1$ score of 1.0 represents perfect precision and recall and a score of 0 means either precision or recall is 0.
 
 ![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Variance.png)
 
