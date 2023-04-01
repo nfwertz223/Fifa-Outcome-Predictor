@@ -67,13 +67,6 @@ The figure above shows the pca explained variance ratio for respective component
 
 The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
 
-## References
-
-
-
-1. Predicting Final Result of Football Match Using Poisson Regression Model
-2. Predicting the Outcome of Soccer Matches Using Machine Learning and Statistical Analysis
-3. Predicting Winner of Football Match Using Analytical Hierarchy Process: An Analysis Based on Previous Matches Data
 
 ## Proposed Timeline
 
@@ -90,19 +83,3 @@ Rishi: Introduction and Background, Data Cleaning, Supervised Learning
 Tarun: Introduction and Background, Data Cleaning, Results and Discussion, 
 
 Nat: GitHub Page, Problem Definition, Data Cleaning
-
-
-
-## Works Cited
-
-
-    Azhari, H R, et al. “Predicting Final Result of Football Match Using Poisson Regression Model.” _Journal of Physics: Conference Series_, vol. 1108, Nov. 2018, p. 012066, https://doi.org/10.1088/1742-6596/1108/1/012066.
-
-
-    Elmiligi, Haytham, and Sherif Saad. “Predicting the Outcome of Soccer Matches Using Machine Learning and Statistical Analysis.” _IEEE Xplore_, 1 Jan. 2022, ieeexplore.ieee.org/document/9720896. Accessed 24 Feb. 2023.
-
-
-    Mathien, Hugo. “European Soccer Database.” _Www.kaggle.com_, 2017, www.kaggle.com/datasets/hugomathien/soccer.
-
-
-    Syaifudin, Yan Watequlis, and Pradini Puspitaningayu. “Predicting Winner of Football Match Using Analytical Hierarchy Process: An Analysis Based on Previous Matches Data.” _IEEE Xplore_, 1 Oct. 2021, ieeexplore.ieee.org/document/9655836. Accessed 24 Feb. 2023.
