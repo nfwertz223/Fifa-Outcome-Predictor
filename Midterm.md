@@ -16,9 +16,11 @@ Given two teams and all of their team attributes, we want to predict the outcome
 
 The data that we collected was directly sourced from a dataset from Kaggle as cited below, which contains the team attribute data and matches played in European Soccer from 2008-2016. The training set currently contains a sample of some of the matches played during this time period with the relevant statistics and we are currently testing our model on the remaining data. 
 
-## Methods: As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
+## Methods:
 
-<span style="text-decoration:underline;">Data Cleaning</span>
+As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
+
+### Data Cleaning
 
 To clean the data, we first sourced all the team specific attributes for each team and the matches played across the time period from the table. We then realized that there were a number of redundant columns that acted as classifiers for numerical values that were also within the team attributes table, for example, buildUpPlayPassing (int64) versus buildUpPlayPassingClass (discrete classification variable). The numerical team attribute values are a better indicator of the statistics, and therefore we eliminated the corresponding classification variable columns. 
 
