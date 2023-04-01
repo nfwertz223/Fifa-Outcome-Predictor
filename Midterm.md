@@ -12,11 +12,11 @@ We will be using a training dataset that contains all match data played in major
 
 Given two teams and all of their team attributes, we want to predict the outcome (win/tie/loss and scoreline) between a game played by them.
 
-**Data Collection: **
+**Data Collection:**
 
 The data that we collected was directly sourced from a dataset from Kaggle as cited below, which contains the team attribute data and matches played in European Soccer from 2008-2016. The training set currently contains a sample of some of the matches played during this time period with the relevant statistics and we are currently testing our model on the remaining data. 
 
-**Methods: **As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
+**Methods:** As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
 
 <span style="text-decoration:underline;">Data Cleaning</span>
 
