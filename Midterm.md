@@ -40,7 +40,7 @@ For every match, we then sourced the home team and away team attributes using a 
 
 This is a correlation table of the home team vs away team data for the matches we have. We can split this up into 4 quadrants like a coordinate grid. Q1 and Q3 are all very close to 0, and this makes sense because they are displaying the correlation of the home team’s statistics with the away team’s statistics. Q2 is home with home and Q4 is away with away. We can see darker colors here, which indicate stronger relations (either negative or positive). However, we can see that our range of correlation is not too high (highest value being 0.52), which indicates that each feature is relevant to the team’s playstyle and is important to characterize the team. One interesting note about the validity of our data is that defenceTeamWidth and defencePressure have a relatively high correlation of 0.52. This makes sense because logically speaking, the size of a team’s defense will affect how much pressure the team can apply. 
 
-<span style="text-decoration:underline;">Supervised Learning</span>
+### Supervised Learning
 
 We have so far implemented Logistic Regression. We plan to use random forest in the future to do the supervised learning facet of our project to predict match outcomes based on our features and the corresponding predicted scoreline. 
 
