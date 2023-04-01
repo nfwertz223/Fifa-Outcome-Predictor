@@ -31,11 +31,7 @@ We also noticed each team has multiple rows of statistics to highlight minor cha
 For every match, we then sourced the home team and away team attributes using a lookup function that we implemented. We then created another categorical feature to hold the match outcome (win/loss/draw)
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Variance.png)
+![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Correlation.png)
 
 
 This is a correlation table of the home team vs away team data for the matches we have. We can split this up into 4 quadrants like a coordinate grid. Q1 and Q3 are all very close to 0, and this makes sense because they are displaying the correlation of the home team’s statistics with the away team’s statistics. Q2 is home with home and Q4 is away with away. We can see darker colors here, which indicate stronger relations (either negative or positive). However, we can see that our range of correlation is not too high (highest value being 0.52), which indicates that each feature is relevant to the team’s playstyle and is important to characterize the team. One interesting note about the validity of our data is that defenceTeamWidth and defencePressure have a relatively high correlation of 0.52. This makes sense because logically speaking, the size of a team’s defense will affect how much pressure the team can apply. 
@@ -99,9 +95,11 @@ Since the precision and recall are from 0 to 1, the
 
 <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
+![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Variance.png)
 
 The figure above shows the pca explained variance ratio for respective components. This is one of the visualizations that we have created in order to showcase our data. 
+
+![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/PCABeforeAfter.png)
 
 The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
 
