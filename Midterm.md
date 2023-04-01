@@ -1,6 +1,6 @@
-***Midterm Report***
+# Midterm Report
 
-**Introduction/Background**: A quick introduction of your topic and mostly literature review of what has been done in this area. You can briefly explain your dataset and its features here too.
+## Introduction/Background: A quick introduction of your topic and mostly literature review of what has been done in this area. You can briefly explain your dataset and its features here too.
 
 Soccer, more commonly known as football in Europe and other parts of the world, is one of the most popular sports in the world, with over 1.5 billion people watching the FIFA World Cup final on television. Most approaches to solving the problem of scoreline prediction in soccer have involved match specific data restricted to past score lines, team lineups (which players played and how they performed), shots on target e.t.c. 
 
@@ -8,15 +8,15 @@ We would like to take a novel approach to solving this problem, by involving tea
 
 We will be using a training dataset that contains all match data played in major UEFA regulated leagues, team playstyle data from the 2008-2016 seasons. It has several features - - buildUpPlaySpeed, Team_id, matches - - among others that we have narrowed down to the most relevant ones in our methods section. 
 
-**Problem definition:** Why is there a problem here or what is the motivation of the project?
+## Problem definition: Why is there a problem here or what is the motivation of the project?
 
 Given two teams and all of their team attributes, we want to predict the outcome (win/tie/loss and scoreline) between a game played by them.
 
-**Data Collection:**
+## Data Collection:
 
 The data that we collected was directly sourced from a dataset from Kaggle as cited below, which contains the team attribute data and matches played in European Soccer from 2008-2016. The training set currently contains a sample of some of the matches played during this time period with the relevant statistics and we are currently testing our model on the remaining data. 
 
-**Methods:** As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
+## Methods: As mentioned before, our goal is to see which team would possibly win in a match given their play style attributes. To these ends, we first need to preprocess and clean the data as well as engage in feature selection. 
 
 <span style="text-decoration:underline;">Data Cleaning</span>
 
@@ -42,7 +42,7 @@ This is a correlation table of the home team vs away team data for the matches w
 
 We have so far implemented Logistic Regression. We plan to use random forest in the future to do the supervised learning facet of our project to predict match outcomes based on our features and the corresponding predicted scoreline. 
 
-**Results and Discussion:** 
+## Results and Discussion:
 
 After data processing, we were able to update the missing features in our dataset with our lookup function. We then used PCA to engage in dimensionality reduction, for which the results are shown below. 
 
@@ -103,7 +103,7 @@ The figure above shows the pca explained variance ratio for respective component
 
 The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
 
-**References**
+## References
 
 
 
@@ -111,11 +111,11 @@ The figure above shows the scatter plot comparison of the first two pca componen
 2. Predicting the Outcome of Soccer Matches Using Machine Learning and Statistical Analysis
 3. Predicting Winner of Football Match Using Analytical Hierarchy Process: An Analysis Based on Previous Matches Data
 
-**Proposed Timeline**
+## Proposed Timeline
 
 [https://docs.google.com/spreadsheets/d/10YdRHSxJKPzC3VP-63NqZJo8fd-FwbrFPqzU63ccxqE/edit?usp=sharing](https://docs.google.com/spreadsheets/d/10YdRHSxJKPzC3VP-63NqZJo8fd-FwbrFPqzU63ccxqE/edit?usp=sharing)
 
-**Contribution Table**
+## Contribution Table
 
 Nav: GitHub Page, Data Cleaning, Supervised Learning, Results and Discussion
 
@@ -129,7 +129,7 @@ Nat: GitHub Page, Problem Definition, Data Cleaning
 
 
 
-**Works Cited**
+## Works Cited
 
 
     Azhari, H R, et al. “Predicting Final Result of Football Match Using Poisson Regression Model.” _Journal of Physics: Conference Series_, vol. 1108, Nov. 2018, p. 012066, https://doi.org/10.1088/1742-6596/1108/1/012066.
