@@ -35,7 +35,7 @@ For every match, we then sourced the home team and away team attributes using a 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text]([images/image1.png "image_tooltip"](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Variance.png))
 
 
 This is a correlation table of the home team vs away team data for the matches we have. We can split this up into 4 quadrants like a coordinate grid. Q1 and Q3 are all very close to 0, and this makes sense because they are displaying the correlation of the home team’s statistics with the away team’s statistics. Q2 is home with home and Q4 is away with away. We can see darker colors here, which indicate stronger relations (either negative or positive). However, we can see that our range of correlation is not too high (highest value being 0.52), which indicates that each feature is relevant to the team’s playstyle and is important to characterize the team. One interesting note about the validity of our data is that defenceTeamWidth and defencePressure have a relatively high correlation of 0.52. This makes sense because logically speaking, the size of a team’s defense will affect how much pressure the team can apply. 
