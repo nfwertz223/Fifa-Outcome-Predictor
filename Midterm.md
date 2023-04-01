@@ -55,13 +55,7 @@ F1-score: 0.31893260139375185
 ```
 
 
-All our current metrics are below par. Our accuracy is below 50% which means that less than half the predictions we’re making are currently correct. Most importantly, our 
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-score is currently 0.3189. An acceptable 
+All our current metrics are below par. Our accuracy is below 50% which means that less than half the predictions we’re making are currently correct. Most importantly, our $F_1$ score is currently 0.3189. An acceptable 
 
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
