@@ -47,10 +47,10 @@ After data processing, we were able to update the missing features in our datase
 ### Logistic Regression
 We ran our logistic regression model and our results were the following: 
 
-Accuracy: 0.6500195083886071 (<br>)
-Precision: 0.6505907542407516 (<br>)
-Recall: 0.6412208751297976 (<br>)
-$F_1$-score: 0.6400280898876405 (<br>)
+Accuracy: 0.6500195083886071 <br>
+Precision: 0.6505907542407516 <br>
+Recall: 0.6412208751297976 <br>
+$F_1$-score: 0.6400280898876405 <br>
 
 All our current metrics are around par now, and have vastly improved from our midterm report due to our alternative methods of feature reduction and our redone analysis of our included features. Our accuracy is now 65% which means that more than half the predictions we’re making are currently correct. Most importantly, our 
 $F_1$ score is currently 0.6400. An acceptable  $F_1$ score would at least have to be above 0.60, which means that our model is currently performing better than before. The F1 score that we have currently makes sense when looking at our higher recall and precision. 
@@ -62,10 +62,10 @@ The $F_1$ score must also be from 0 to 1.Note that an $F_1$ score of 1.0 represe
 
 We can compare this performance to the random forest model we implemented whose metrics are as follows. 
 
-Accuracy: 0.5903238392508778
-Precision: 0.5894715917745621
-Recall: 0.5899064293900982
-$F_1$-score: 0.589331327969861
+Accuracy: 0.5903238392508778 <br>
+Precision: 0.5894715917745621 <br>
+Recall: 0.5899064293900982 <br>
+$F_1$-score: 0.589331327969861 <br>
 
 Our accuracy and $F_1$ scores are lower for the random forest model at 0.590 and 0.589 respectively. However, this is still a marked improvement over our first logistic regression model that we ran at the project midpoint. This shows that incorporating the past win rate of the team did in fact improve our accuracy across the board, showing better feature selection. 
 These changes make sense as past win rates should be highly indicative of present and future success, and thus incorporating this information is expected to result in an increased accuracy. We can see this by increased accuracy, and the difference between our midterm accuracy and final accuracy show the improvements that the addition of past win rates resulted in.
