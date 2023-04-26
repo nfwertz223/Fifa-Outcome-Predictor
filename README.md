@@ -33,8 +33,14 @@ We also created another data processing function that was able to sift through t
 
 At first, we attempted to perform dimensionality reduction using principal component analysis, or PCA. However, our accuracies for all three models decreased when using this approach. As an alternative, we attempted this using linear discriminant analysis (LDA) as well as recursive feature elimination (RFE). After analyzing and comparing results between the different dimensionality reduction , we found that LDA proved to be the most effective method of dimensionality reduction, as it resulted in the highest accuracies for each model.
 
+![Correlation Table](visuals/heatmap.png)
+
 
 This is a correlation table of the home team vs away team data for the matches we have. We can split this up into 4 quadrants like a coordinate grid. Q1 and Q3 are all very close to 0, and this makes sense because they are displaying the correlation of the home team’s statistics with the away team’s statistics. Q2 is home with home and Q4 is away with away. We can see darker colors here, which indicate stronger relations (either negative or positive). However, we can see that our range of correlation is not too high (highest value being 0.52), which indicates that each feature is relevant to the team’s playstyle and is important to characterize the team. One interesting note about the validity of our data is that defenceTeamWidth and defencePressure have a relatively high correlation of 0.52. This makes sense because logically speaking, the size of a team’s defense will affect how much pressure the team can apply. Defenses that employ a high up the pitch pressure tactic tend to also be more spread out to cover more ground. 
+
+![Scatter Plot 1](scatter1.png)
+
+![Scatter Plot 2](scatter2.png)
 
 ### Supervised Learning
 
@@ -58,6 +64,8 @@ $F_1$ score is currently 0.6400. An acceptable  $F_1$ score would at least have 
 
 The $F_1$ score must also be from 0 to 1.Note that an $F_1$ score of 1.0 represents perfect precision and recall and a score of 0 means either precision or recall is 0. I believe that the reason for us having a much better metrics is due to incorporating team past win history into our features since past behavior of a team is a good indicator of how they will perform. 
 
+![Logistic Regression Confusion Matrix](visuals/logregconfusion.png)
+
 ### Random Forest
 
 We can compare this performance to the random forest model we implemented whose metrics are as follows. 
@@ -70,16 +78,18 @@ $F_1$-score: 0.589331327969861 <br>
 Our accuracy and $F_1$ scores are lower for the random forest model at 0.590 and 0.589 respectively. However, this is still a marked improvement over our first logistic regression model that we ran at the project midpoint. This shows that incorporating the past win rate of the team did in fact improve our accuracy across the board, showing better feature selection. 
 These changes make sense as past win rates should be highly indicative of present and future success, and thus incorporating this information is expected to result in an increased accuracy. We can see this by increased accuracy, and the difference between our midterm accuracy and final accuracy show the improvements that the addition of past win rates resulted in.
 
+![Random Forest Confusion Matrix](visuals/randforconfusion.png)
+
 ### K Means
 
 We also decided to implement an unsupervised learning algorithm. We implemented K-means clustering to gain some more insight into how playstyles could be segmented. We ran the algorithm with 2 clusters and a standardized initialization. Our analysis of the clustering results was more qualitative in nature as we used our general soccer intuition to figure out what the innate meaning of the clusters were. 
 Our results showed that teams which were more possession based in their playstyle such as Manchester City, Liverpool, and Barcelona were all grouped together in one cluster while more counter attacking teams such as Manchester United, Real Madrid and Atletico Madrid were grouped together in another cluster. This makes sense as all the team attributes that were our features, and their values should ideally group teams with similar play styles together. 
 
-![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/Variance.png)
+![Explained Variance PCA](Variance.png)
 
 The figure above shows the pca explained variance ratio for respective components. This is one of the visualizations that we have created in order to showcase our data. 
 
-![alt_text](https://github.gatech.edu/nkadaba3/MLProject/blob/main/PCABeforeAfter.png)
+![PCA Before and After](PCABeforeAfter.png)
 
 The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
 
