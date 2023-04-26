@@ -105,6 +105,8 @@ Our results showed that teams which were more possession based in their playstyl
 
 Our group was able to drastically improve our model accuracy through better feature selection. In hindsight, we could have further re-evaluated our model to incorporate more features that indicated performance history of the team such as their record against their opponents in the past, or the overall record of the team in that given competition. However, we think that our model performs to a relatively satisfactory degree considering that match prediction for any sport has proven to be a notoriously difficult task. 
 
+When comparing our two supervised learning model, considering that our Logistic Regression model works better based on the metrics, it is likely that our classes (win/loss) are more linearly seperable. The Linear Regression model is also more interpretable considering that if we refer back to our heatmap, the win percentage of each team has a larger correlation with the win/loss outcome of a game for a particular team. 
+
 We were also able to gain additional insights into our data using an unsupervised learning as we were able to cluster teams based on their playstyle, which shows that our attribute values did play a role in indicating the way in which the team played to a decent degree. 
 
 ## Contribution Table
