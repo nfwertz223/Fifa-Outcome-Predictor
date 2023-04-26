@@ -33,14 +33,25 @@ We also created another data processing function that was able to sift through t
 
 At first, we attempted to perform dimensionality reduction using principal component analysis, or PCA. However, our accuracies for all three models decreased when using this approach. As an alternative, we attempted this using linear discriminant analysis (LDA) as well as recursive feature elimination (RFE). After analyzing and comparing results between the different dimensionality reduction , we found that LDA proved to be the most effective method of dimensionality reduction, as it resulted in the highest accuracies for each model.
 
-![Correlation Table](visuals/heatmap.png)
+![Explained Variance PCA](Variance.png)
 
+The figure above shows the pca explained variance ratio for respective components. This is one of the visualizations that we have created in order to showcase our data. 
+
+![PCA Before and After](PCABeforeAfter.png)
+
+The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
+
+![Correlation Table](visuals/heatmap.png)
 
 This is a correlation table of the home team vs away team data for the matches we have. We can split this up into 4 quadrants like a coordinate grid. Q1 and Q3 are all very close to 0, and this makes sense because they are displaying the correlation of the home team’s statistics with the away team’s statistics. Q2 is home with home and Q4 is away with away. We can see darker colors here, which indicate stronger relations (either negative or positive). However, we can see that our range of correlation is not too high (highest value being 0.52), which indicates that each feature is relevant to the team’s playstyle and is important to characterize the team. One interesting note about the validity of our data is that defenceTeamWidth and defencePressure have a relatively high correlation of 0.52. This makes sense because logically speaking, the size of a team’s defense will affect how much pressure the team can apply. Defenses that employ a high up the pitch pressure tactic tend to also be more spread out to cover more ground. 
 
 ![Scatter Plot 1](scatter1.png)
 
+This plot shows how defenceTeamWidth and playPassing are unrelated features. This makes sense because one relates to defence and one relates to offense.
+
 ![Scatter Plot 2](scatter2.png)
+
+This plot shows how defenceTeamWidth and defencePressure are related features. This makes sense because both are related to defence.
 
 ### Supervised Learning
 
@@ -66,6 +77,9 @@ The $F_1$ score must also be from 0 to 1.Note that an $F_1$ score of 1.0 represe
 
 ![Logistic Regression Confusion Matrix](visuals/logregconfusion.png)
 
+This is the confusion matrix for our logistic regression model. 
+
+
 ### Random Forest
 
 We can compare this performance to the random forest model we implemented whose metrics are as follows. 
@@ -80,18 +94,12 @@ These changes make sense as past win rates should be highly indicative of presen
 
 ![Random Forest Confusion Matrix](visuals/randforconfusion.png)
 
+This is the confusion matrix for our random forest model. 
+
 ### K Means
 
 We also decided to implement an unsupervised learning algorithm. We implemented K-means clustering to gain some more insight into how playstyles could be segmented. We ran the algorithm with 2 clusters and a standardized initialization. Our analysis of the clustering results was more qualitative in nature as we used our general soccer intuition to figure out what the innate meaning of the clusters were. 
 Our results showed that teams which were more possession based in their playstyle such as Manchester City, Liverpool, and Barcelona were all grouped together in one cluster while more counter attacking teams such as Manchester United, Real Madrid and Atletico Madrid were grouped together in another cluster. This makes sense as all the team attributes that were our features, and their values should ideally group teams with similar play styles together. 
-
-![Explained Variance PCA](Variance.png)
-
-The figure above shows the pca explained variance ratio for respective components. This is one of the visualizations that we have created in order to showcase our data. 
-
-![PCA Before and After](PCABeforeAfter.png)
-
-The figure above shows the scatter plot comparison of the first two pca components. The top graph shows the comparison before transformation and the bottom graph shows the comparison after transformation.
 
 ## Conclusion
 
